@@ -27,14 +27,14 @@ body {
     border-style: solid;
 }
 
-#side_menu button {
-    list-style-type: none;
+#side_menu a {
     text-align: center;
     font-size: 1.5rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    text-decoration-line: none;
 
     padding: 0.5rem;
 
@@ -48,12 +48,16 @@ body {
     transition-duration: 200ms;
 }
 
-#side_menu button:hover {
+#side_menu a:hover {
     background-color: #002a38;
     border-color: white;
     color: #ccf9ff;
     transition-duration: 200ms;
     box-shadow: 0 0 0.5vmin 0.5vmin rgba(255, 255, 255, 0.366);
+}
+
+.logo {
+    height: 12rem;
 }
 
 #content {
@@ -67,7 +71,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    background-image: url("../assets/header.jpg");
+    background-image: url("../meedia/pildid/header.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

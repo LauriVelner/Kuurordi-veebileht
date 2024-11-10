@@ -7,7 +7,6 @@
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -19,28 +18,27 @@ body {
 #side_menu {
     display: flex;
     padding-top: 0.5rem;
-    height: auto;
-    /* Background gradiendt */
-    background: linear-gradient(0deg, #133E87 0%, #3b66b0 100%);
     flex-direction: column;
     border-width: 0.25rem;
     border-color: #608BC1;
     border-style: solid;
+    background: linear-gradient(0deg, #133E87 0%, #3b66b0 100%);
 }
 
 #side_menu a {
     text-align: center;
     font-size: 1.5rem;
+
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    text-decoration-line: none;
 
     padding: 0.5rem;
 
     color: #133E87;
     background-color: #ccf9ff;
+    text-decoration-line: none;
 
     border: 0.25rem;
     border-color: #608BC1;
@@ -54,7 +52,7 @@ body {
     border-color: white;
     color: #ccf9ff;
     transition-duration: 100ms;
-    box-shadow: 0 0 0.3em 0.3em rgba(255, 255, 255, 0.366);
+    box-shadow: 0 0 0.3em 0.3em rgba(255, 255, 255, 0.436);
 }
 
 .logo {
@@ -72,8 +70,6 @@ body {
 }
 
 .header {
-    justify-content: center;
-    align-items: center;
     font-size: 3rem;
     background-image: url("../meedia/pildid/header.jpg");
     background-position: center;
@@ -86,19 +82,16 @@ body {
 }
 
 .header h1 {
-    margin: 0;
     margin: 1em;
     color: white;
     text-align: center;
-    text-shadow: 0 0 0.3em rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 0.6em rgba(0, 0, 0, 0.5);
 }
 
 #main_panel {
     display: grid;
     gap: 1em;
-    padding: 1em;
-    font-size: 1rem;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 #main_panel ul {

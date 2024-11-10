@@ -3,33 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../static/styles.css">
     <script src="myScript.js"></script> 
     <title>XYZ suusakuurort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Majutus</h1>
-    <p>Siit leiad endale sobiva suurusega toa ning selle hinna.</p>
-    <table>
-        <tr>
-        <th>Toa suurus</th>
-        <th>Hind</th>
-        </tr>
-        <tr>
-        <td>Ühe Inimese Tuba</td>
-        <td>60€/öö</td>
-        </tr>
-        <tr>
-        <td>Kahe Inimese Tuba</td>
-        <td>80€/öö</td>
-        </tr>
-        <tr>
-        <td>Pere Tuba</td>
-        <td>150€/öö</td>
-        </tr>
-        <tr>
-        <td>Luksuslik Tuba</td>
-        <td>220€/öö</td>
-        </tr>
-        </table>
+    <div class="container">
+        <nav id="side_menu">
+            <a class="logo" href="../pealeht.html"></a>
+            <a href="meist.html">About Us</a>
+            <a href="majutus.html">Accommodation</a>
+            <a href="galerii.html">Gallery</a>
+            <a href="broneering.html">Booking</a>
+        </nav>
+        <div id="content">
+            <header class="header">
+                <h1>Majutus</h1>
+            </header>
+            <div id="main_panel">
+                <h2>Siit leiad endale sobiva suurusega toa ning selle hinna.</h2>
+                <table id="room_table">
+                    <tr>
+                    <th>Room Size</th>
+                    <th>Hind</th>
+                    </tr>
+                    <tr>
+                    <td>One Person Room</td>
+                    <td>60€/night</td>
+                    </tr>
+                    <tr>
+                    <td>Two Person Room</td>
+                    <td>80€/night</td>
+                    </tr>
+                    <tr>
+                    <td>Family Room</td>
+                    <td>150€/night</td>
+                    </tr>
+                    <tr>
+                    <td>Royal Suite</td>
+                    <td>220€/night</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>

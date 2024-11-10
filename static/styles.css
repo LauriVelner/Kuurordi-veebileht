@@ -12,7 +12,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 16em 1fr;
+    grid-template-columns: 18em 1fr;
     height: 100vh;
 }
 
@@ -20,10 +20,10 @@ body {
     display: flex;
     padding-top: 0.5rem;
     height: auto;
-    background-color: #002a38;
+    background-color: #133E87;
     flex-direction: column;
     border-width: 0.25rem;
-    border-color: #88c2ff;
+    border-color: #608BC1;
     border-style: solid;
 }
 
@@ -38,33 +38,36 @@ body {
 
     padding: 0.5rem;
 
-    color: #002a38;
+    color: #133E87;
     background-color: #ccf9ff;
 
     border: 0.25rem;
-    border-color: #88c2ff;
+    border-color: #608BC1;
     border-style: solid;
     border-radius: 8px;
-    transition-duration: 200ms;
+    transition-duration: 100ms;
 }
 
 #side_menu a:hover {
-    background-color: #002a38;
+    background-color: #133E87;
     border-color: white;
     color: #ccf9ff;
-    transition-duration: 200ms;
-    box-shadow: 0 0 0.5vmin 0.5vmin rgba(255, 255, 255, 0.366);
+    transition-duration: 100ms;
+    box-shadow: 0 0 0.3em 0.3em rgba(255, 255, 255, 0.366);
 }
 
 .logo {
-    height: 12rem;
+    height: 14rem;
+    background-image: url("../meedia/pildid/logo.png");
+    background-position: center;
+    background-size: contain;
 }
 
 #content {
     display: flex;
     flex-direction: column;
     overflow: auto;
-    z-index: 1;
+    background-color: #CBDCEB;
 }
 
 .header {
@@ -75,6 +78,10 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 0;
+    border-bottom: 0.25rem;
+    border-color: #608BC1;
+    border-style: solid;
 }
 
 .header h1 {
@@ -82,10 +89,41 @@ body {
     margin: 1em;
     color: white;
     text-align: center;
-    text-shadow: #040465;
+    text-shadow: 0 0 0.3em rgba(255, 255, 255, 0.7);
 }
 
-#content {
-    height: auto;
-    background-color: #f0f0f0;
+#main_panel {
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+#main_panel * {
+    margin: 0;
+}
+
+#main_panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#room_table {
+    border: #608BC1;
+    border-width: 0.25rem;
+    border-radius: 0.25rem;
+    border-style: solid;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#room_table td {
+    padding: 0.5rem;
+}
+
+#room_table th {
+    padding: 0.5rem;
+    background-color: #133E87;
+    color: white;
 }

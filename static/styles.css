@@ -20,7 +20,8 @@ body {
     display: flex;
     padding-top: 0.5rem;
     height: auto;
-    background-color: #133E87;
+    /* Background gradiendt */
+    background: linear-gradient(0deg, #133E87 0%, #3b66b0 100%);
     flex-direction: column;
     border-width: 0.25rem;
     border-color: #608BC1;
@@ -100,10 +101,6 @@ body {
     padding: 2rem;
 }
 
-#main_panel * {
-    margin: 0;
-}
-
 #main_panel ul {
     list-style-type: none;
     padding: 0;
@@ -126,4 +123,26 @@ body {
     padding: 0.5rem;
     background-color: #133E87;
     color: white;
+}
+
+#gallery_title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 80%;
+    height: auto;
+    border: 0.25rem;
+    border-color: #608BC1;
+    border-style: solid;
+    border-radius: 1rem;
+    margin: 2rem;
 }

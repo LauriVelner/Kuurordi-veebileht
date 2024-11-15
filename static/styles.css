@@ -139,3 +139,10 @@ body {
     border-radius: 1rem;
     margin: 2rem;
 }
+
+.vahe {
+    display: block;
+    line-height: 1.1; /* Adjust this value to control the spacing */
+    margin: 0;
+    font-style: italic;
+}

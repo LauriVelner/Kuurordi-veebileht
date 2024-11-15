@@ -142,7 +142,7 @@ body {
 
 .vahe {
     display: block;
-    line-height: 1.1; /* Adjust this value to control the spacing */
+    line-height: 1.1;
     margin: 0;
     font-style: italic;
 }

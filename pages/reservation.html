@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/styles.css">
+    <script src="../static/script.js"></script>
     <title>XYZ suusakuurort</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,16 +24,28 @@
           <h1>Booking</h1>
         </header>
         <div id="main_panel">
-          <form action="/action_page.php">
-            <label for="isikud">Number of People:</label>
-            <input type="text" id="isikud" name="isikud"><br><br>
-            <label for="algus">Beginning Date:</label>
-            <input type="text" id="algus" name="algus"><br><br>
-            <label for="lopp">End Date:</label>
-            <input type="text" id="lopp" name="lopp"><br><br>
-            <input type="submit" value="Kinnita">
-          </form>
-        </div>
+          <div id="main_panel">
+            <form id="reservationForm">
+              <label for="people">Number of People:</label>
+              <input type="text" id="people" name="people" required><br><br>
+              
+              <label for="start">Beginning Date:</label>
+              <input type="text" id="start" name="start" placeholder="YYYY-MM-DD" required><br><br>
+              
+              <label for="end">End Date:</label>
+              <input type="text" id="end" name="end" placeholder="YYYY-MM-DD" required><br><br>
+              
+              <label for="room">Select Room Type:</label>
+              <select id="room" name="room" required>
+                <option value="60">One Person Room - 60€/night</option>
+                <option value="80">Two Person Room - 80€/night</option>
+                <option value="150">Family Room - 150€/night</option>
+                <option value="220">Royal Suite - 220€/night</option>
+              </select><br><br>
+              
+              <input type="submit" value="Confirm">
+            </form>
+          </div>
     </div>
   </div>
 </body>

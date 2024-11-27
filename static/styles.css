@@ -12,7 +12,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 18em 1fr;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #side_menu {
@@ -145,4 +145,13 @@ body {
     line-height: 1.1;
     margin: 0;
     font-style: italic;
+}
+
+#footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #133E87;
+    color: #ccf9ff;
+    font-size: 0.9rem;
+    border-top: 0.25rem solid #608BC1;
 }

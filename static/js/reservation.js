@@ -16,13 +16,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         modal.style.display = "block";
 
+        // Elemendi sulgemine ristist
         span.onclick = function() {
-          modal.style.display = "none";
+          closeModal()
         }
 
+        // Kui elemendist vajutatakse klikitakse, siis element kaob
         window.onclick = function(event) {
           if (event.target == modal) {
-            modal.style.display = "none";
+            closeModal()
           }
         } 
 
@@ -38,3 +40,14 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error("Reservation form not found");
     }
 });
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") {
+      closeModal();
+  }
+});
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}

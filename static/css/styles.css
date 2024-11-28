@@ -57,7 +57,7 @@ body {
 
 .logo {
     height: 14rem;
-    background-image: url("../meedia/pildid/logo.png");
+    background-image: url("../../meedia/pildid/logo.png");
     background-position: center;
     background-size: contain;
 }
@@ -71,7 +71,7 @@ body {
 
 .header {
     font-size: 3rem;
-    background-image: url("../meedia/pildid/header.jpg");
+    background-image: url("../../meedia/pildid/header.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

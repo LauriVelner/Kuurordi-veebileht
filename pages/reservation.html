@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/styles.css">
-    <script src="../static/script.js"></script>
+    <script src="../static/js/reservation.js"></script>
     <title>XYZ suusakuurort</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,13 +27,13 @@
           <div id="main_panel">
             <form id="reservationForm">
               <label for="people">Number of People:</label>
-              <input type="text" id="people" name="people" required><br><br>
+              <input type="number" id="people" name="people" required><br><br>
               
               <label for="start">Beginning Date:</label>
-              <input type="text" id="start" name="start" placeholder="YYYY-MM-DD" required><br><br>
+              <input type="date" id="start" name="start" required><br><br>
               
               <label for="end">End Date:</label>
-              <input type="text" id="end" name="end" placeholder="YYYY-MM-DD" required><br><br>
+              <input type="date" id="end" name="end" required><br><br>
               
               <label for="room">Select Room Type:</label>
               <select id="room" name="room" required>
@@ -45,6 +45,15 @@
               
               <input type="submit" value="Confirm">
             </form>
+          </div>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1>Thank You for Your Reservation!</h1>
+              <p>Your reservation has been successfully registered. Here are the details:</p>
+              <div id="reservationDetails"></div>
+            </div>
           </div>
     </div>
   </div>

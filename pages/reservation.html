@@ -24,7 +24,6 @@
           <h1>Booking</h1>
         </header>
         <div id="main_panel">
-          <div id="main_panel">
             <form id="reservationForm">
               <label for="people">Number of People:</label>
               <input type="number" id="people" name="people" required><br><br>
@@ -35,12 +34,14 @@
               <label for="end">End Date:</label>
               <input type="date" id="end" name="end" required><br><br>
               
+
               <label for="room">Select Room Type:</label>
               <select id="room" name="room" required>
-                <option value="60">One Person Room - 60€/night</option>
-                <option value="80">Two Person Room - 80€/night</option>
-                <option value="150">Family Room - 150€/night</option>
-                <option value="220">Royal Suite - 220€/night</option>
+               <option value="" disabled selected>Please select a room type</option>
+               <option value="60">One Person Room - 60€/night</option>
+               <option value="80">Two Person Room - 80€/night</option>
+               <option value="150">Family Room - 150€/night</option>
+               <option value="220">Royal Suite - 220€/night</option>
               </select><br><br>
               
               <input type="submit" value="Confirm">

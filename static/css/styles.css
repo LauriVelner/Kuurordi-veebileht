@@ -13,6 +13,7 @@ body {
     display: grid;
     grid-template-columns: 18em 1fr;
     min-height: 100vh;
+    height: 100vh;
 }
 
 #side_menu {

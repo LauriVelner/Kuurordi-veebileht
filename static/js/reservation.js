@@ -1,7 +1,29 @@
 // Autor: ChatGPT + https://www.w3schools.com/howto/howto_css_modals.asp
 document.addEventListener('DOMContentLoaded', function() {
     if (document.getElementById('reservationForm')) {
-      console.log("Reservation form found");
+      const startInput = document.getElementById('start');
+      const endInput = document.getElementById('end');
+    
+      function formatDate(date) {
+        const yyyy = date.getFullYear();
+        const mm = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+        const dd = String(date.getDate()).padStart(2, '0');
+        return `${yyyy}-${mm}-${dd}`;
+      }
+    
+      const today = new Date();
+      const tomorrow = new Date(today);
+      tomorrow.setDate(today.getDate() + 1);
+      startInput.setAttribute('min', formatDate(tomorrow));
+    
+      startInput.addEventListener('change', () => {
+        const startDate = new Date(startInput.value);
+        if (!isNaN(startDate)) {
+          const nextDay = new Date(startDate);
+          nextDay.setDate(startDate.getDate() + 1);
+          endInput.setAttribute('min', formatDate(nextDay));
+        }
+      });
   
       document.getElementById('reservationForm').addEventListener('submit', function (event) {
         event.preventDefault(); 
